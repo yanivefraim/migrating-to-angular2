@@ -57,7 +57,7 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 					<section>
-					<h2>Migrating to Angular 2.0</h2>
+					<h1>MIGRATING TO ANGULAR 2.0</h1>
 					<div>
 						<p>Yaniv Efraim</p>
 					</div>
@@ -116,6 +116,51 @@ Hacking on migrating to Angular 2.0 stuff on the last few months.
 						</ul>
 					</div>
 				</section>
+				<section>
+          <h2 style="color: #ff4b5e">Migration Path, Option A</h2>
+          <img src="./images/rmrf.png" width="40%" style="margin: 20px 0;background: none;border: none;box-shadow: none;" />
+          <!-- <p style="margin: 40px 0;font-size: 1.5em;"> masterzrm -rf project</p> -->
+          <p>(Write everything from scratch)</p>
+        </section>
+        <section>
+          <h2 style="color: #ff4b5e">Migration Path, Option B</h2>
+          <ol>
+            <li class="fragment fade-in" style="color: #ff4b5e"><span style="color: #eee">Prepare current code</li>
+            <li class="fragment fade-in" style="color: #ff4b5e;"><span style="color: #eee">ngUpgrade - Progressively upgrade components</li>
+          </ol>
+        </section>
+        <section>
+          <h2 style="color: #ff4b5e">Prepare current code</h2>
+          <p>Did you see my <a href="http://yanivefraim.github.io/be-ready-for-angular2-today">"Be Ready For Angular 2.0"</a> talk?</p>
+        </section>
+        <section>
+          <h2 style="color: #ff4b5e">Progressively upgrade components</h2>
+          Image here???
+        </section>
+        <section>
+          <h2 style="color: #ff4b5e;text-transform:none;">ngUpgrade - How Does It Works?</h2>
+        </section>
+        <section>
+          <h2 style="color: #ff4b5e;text-transform:none;">ngUpgrade - Component Nesting</h2>
+          <ol>
+            <li class="fragment fade-in" style="color: #ff4b5e"><span style="color: #eee">Angular 2.0 component inside Angular 1.X application</li>
+            <li class="fragment fade-in" style="color: #ff4b5e;"><span style="color: #eee">Angular 1.X directive inside Angular 2.0 application</li>
+          </ol>
+        </section>
+        <section>
+          <h2 style="color: #ff4b5e;text-transform:none;">ngUpgrade - Service Injection</h2>
+          <ol>
+            <li class="fragment fade-in" style="color: #ff4b5e"><span style="color: #eee">Angular 1.X services are available to Angular 2.0 components</li>
+            <li class="fragment fade-in" style="color: #ff4b5e"><span style="color: #eee">Angular 2.0 services are available to Angular 1.X directives</li>
+          </ol>
+        </section>
+        <section>
+          <h2 style="color: #ff4b5e;text-transform:none;">ngUpgrade - Transclusion</h2>
+          <ol>
+            <li class="fragment fade-in" style="color: #ff4b5e"><span style="color: #eee">Angular 1.X directive transclude Angular 2.0 component</li>
+            <li class="fragment fade-in" style="color: #ff4b5e"><span style="color: #eee">Angular 2.0 component project Angular 1.X directive</li>
+          </ol>
+        </section>
 				<section>
 					<h2>Hello There</h2>
 					<p>
