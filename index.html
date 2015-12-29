@@ -130,11 +130,11 @@ Hacking on migrating to Angular 2.0 stuff on the last few months.
           </ol>
         </section>
         <section>
-          <h2 style="color: #ff4b5e">Prepare current code</h2>
+          <h2 style="color: #ff4b5e">1. Prepare current code</h2>
           <p>Did you see my <a href="http://yanivefraim.github.io/be-ready-for-angular2-today">"Be Ready For Angular 2.0"</a> talk?</p>
         </section>
         <section>
-          <h2 style="color: #ff4b5e">Progressively upgrade components</h2>
+          <h2 style="color: #ff4b5e">2. Progressively upgrade components</h2>
           Image here???
         </section>
         <section>
@@ -166,6 +166,49 @@ Hacking on migrating to Angular 2.0 stuff on the last few months.
           <ul>
             <li class="fragment fade-in" style="color: #ff4b5e"><span style="color: #eee">Angular 1 scope digest and change detectors in Angular 2 are interleaved</li>
           </ul>
+        </section>
+        <section>
+          <h2 style="color: #ff4b5e;text-transform:none;">Migration Metal Model</h2>
+          <ul>
+            <li class="fragment fade-in" style="color: #ff4b5e"><span style="color: #eee">Minimize (migration) preparation work</li>
+            <li class="fragment fade-in" style="color: #ff4b5e"><span style="color: #eee">Do not touch old code until you want to upgrade that specific element</li>
+          </ul>
+        </section>
+        <section>
+          <h2 style="color: #ff4b5e;text-transform:none;">Why?</h2>
+          <ul>
+            <li class="fragment fade-in" style="color: #ff4b5e"><span style="color: #eee">Real world applications are big and complex</li>
+            <li class="fragment fade-in" style="color: #ff4b5e"><span style="color: #eee">Minimize refactoring / testings / bugs</li>
+          </ul>
+        </section>
+        <section>
+          <h2 style="color: #ff4b5e;text-transform:none;">So, How Do We Do It?</h2>
+          <p>Not like this:</p>
+          <a href="https://angular.io/docs/ts/latest/guide/upgrade.html">(Angular official migration guid)</a>
+        </section>
+        <section>
+          <h2 style="color: #ff4b5e;text-transform:none;">So, How Do We Do It?</h2>
+          <ol>
+          	<li>
+          		Add ES2015 / Typescript support to your projects
+          	</li>
+          	<li>
+          		Add SystemJS (or some other module loader)
+          	</li>
+          	<li>
+          		Install Angular 2.0
+          	</li>
+          	<li>
+          		Remove ng-app from body
+          	</li>
+          	<li>
+          		Add manual bootsrap by ngUpgrade adapter (do it in bootstrap.ts)
+          	</li>
+          	<li>
+          		Start upgrading!
+          	</li>
+
+          </ol>
         </section>
 				<section>
 					<h2>Hello There</h2>
